@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Kumar+One|Roboto|PT+Sans" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: 'PT Sans', cursive;
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        h1 small {
+            font-size: 0.6em;
+            color: #a5a5a5;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        div.post {
+
+            margin-bottom: 1em;
+            padding: 0;
+        }
+
+        div.content {
+            max-width: 440px;
+        }
+
+        label {
+            display: block;
+            margin: 0.5em 0;
+        }
+
+        input[type=text], textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="content">
+    <div class="post">
+        <form method="POST">
+            <label>
+                Название:
+                <input type="text" name="name"/>
+            </label>
+
+            <label>
+                Текст:<br/>
+                <textarea name="text" style="height: 100px"></textarea>
+            </label>
+
+            <label style="display:flex;justify-content: space-between">
+                Дата поста:
+                <input type="date" name="date"/>
+            </label>
+
+            <input type="submit" value="Отправить"/>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
